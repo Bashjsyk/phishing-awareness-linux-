@@ -1,0 +1,10 @@
+PHISHING AWARENESS LAB CHECKLIST
+
+[ ] Lab directory created
+[ ] Training webpage created
+[ ] Page opens locally
+[ ] Only dummy information is used
+[ ] No credentials are stored
+[ ] No credentials are transmitted
+[ ] Warning signs of phishing are identified
+[ ] Simulation completed successfully

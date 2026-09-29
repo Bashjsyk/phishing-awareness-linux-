@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Security Awareness Training</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input, button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .notice {
+            padding: 12px;
+            background: #eee;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Security Awareness Simulation</h1>
+
+    <div class="notice">
+        This is a cybersecurity training exercise.
+        Do not enter real passwords or personal information.
+    </div>
+
+    <p>
+        This page demonstrates how a suspicious login request
+        can appear.
+    </p>
+
+    <form onsubmit="showTrainingMessage(event)">
+
+        <label>Training Username</label>
+
+        <input
+            type="text"
+            placeholder="Use a dummy value only"
+        >
+
+        <label>Training Password</label>
+
+        <input
+            type="password"
+            placeholder="Use a dummy value only"
+        >
+
+        <button type="submit">
+            Simulate Sign In
+        </button>
+
+    </form>
+
+    <p id="result"></p>
+
+</div>
+
+<script>
+
+function showTrainingMessage(event) {
+
+    event.preventDefault();
+
+    document.getElementById("result").textContent =
+        "Simulation complete: no credentials were collected or transmitted.";
+
+}
+
+</script>
+
+</body>
+</html>
